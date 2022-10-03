@@ -1,8 +1,13 @@
 import styled from '@emotion/styled';
 
 export const ContainerStyle = styled.div`
-  max-width: 900px;
+  width: 1920px;
+  height: 1080px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
+
+  background-color: #f3f7fa;
+  border: 1px solid black;
+  border-radius: 50px;
+  overflow: hidden;
 `;
