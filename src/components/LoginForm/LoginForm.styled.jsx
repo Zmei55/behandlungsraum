@@ -96,6 +96,10 @@ export const Button = styled.button`
   :active {
     background-color: ${props => props.theme.colors.primary.pressed};
   }
+
+  :disabled {
+    background-color: ${props => props.theme.colors.primary.disabled};
+  }
 `;
 
 export const IconArrowRicht = styled(iconArrowRicht)`

@@ -27,7 +27,7 @@ export function LoginForm() {
           </Label>
         </Container>
 
-        <Button>
+        <Button type="button">
           Weiter
           <IconArrowRicht />
         </Button>
