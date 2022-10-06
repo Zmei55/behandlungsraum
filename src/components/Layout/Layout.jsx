@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { WorkingPlace } from 'components/WorkingPlace';
 // import { UserMenu } from 'components/UserMenu';
-import { Header, Button } from './Layout.styled';
+import { Header, Button, IconMainMenuBtn } from './Layout.styled';
 
 export function Layout() {
   return (
@@ -9,7 +9,9 @@ export function Layout() {
       <Header>
         <WorkingPlace />
         {/* <UserMenu /> */}
-        <Button type="button">Menu</Button>
+        <Button type="button">
+          <IconMainMenuBtn />
+        </Button>
       </Header>
       <Outlet />
     </>

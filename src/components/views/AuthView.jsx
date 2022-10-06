@@ -1,5 +1,5 @@
 import { LoginForm } from 'components/LoginForm';
 
-export function LoginView() {
+export function AuthView() {
   return <LoginForm />;
 }

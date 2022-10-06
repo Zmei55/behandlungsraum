@@ -1,3 +1,4 @@
+// import { useState } from 'react';
 import {
   Section,
   Form,
@@ -11,6 +12,17 @@ import {
 } from './LoginForm.styled';
 
 export function LoginForm() {
+  // const [formState, setFormState] = useState({
+  //   login: '',
+  //   password: '',
+  // });
+
+  // const handleChange = ({ target: { name, value } }) =>
+  //   setFormState(prev => ({ ...prev, [name]: value }));
+
+  // const isEmptyForm =
+  //   formState.login.length === 0 || formState.password.length === 0;
+
   return (
     <Section>
       <Form>
@@ -19,15 +31,30 @@ export function LoginForm() {
 
         <Container>
           <Label>
-            <Input type="text" placeholder="Login" />
+            <Input
+              name="login"
+              type="text"
+              placeholder="Login"
+              // onChange={handleChange}
+              required
+            />
           </Label>
 
           <Label>
-            <Input type="text" placeholder="Password" />
+            <Input
+              name="password"
+              type="password"
+              placeholder="Password"
+              // onChange={handleChange}
+              required
+            />
           </Label>
         </Container>
 
-        <Button type="button">
+        <Button
+          type="button"
+          // disabled={isEmptyForm}
+        >
           Weiter
           <IconArrowRicht />
         </Button>

@@ -62,6 +62,7 @@ export const Input = styled.input`
   padding-right: ${props => props.theme.spacing(6)};
   padding-bottom: ${props => props.theme.spacing(5.5)};
   padding-left: ${props => props.theme.spacing(6)};
+  outline: none;
   border: ${props => props.theme.border};
   border-radius: ${props => props.theme.borderRadius};
 
@@ -69,6 +70,10 @@ export const Input = styled.input`
     font-size: 24px;
     line-height: 1.17;
     color: ${props => props.theme.colors.text.placeholder};
+  }
+
+  :focus {
+    border-color: ${props => props.theme.colors.primary.default};
   }
 `;
 
@@ -85,7 +90,7 @@ export const Button = styled.button`
   /* padding-right: ${props => props.theme.spacing(6)}; */
   /* padding-bottom: ${props => props.theme.spacing(5.5)}; */
   /* padding-left: ${props => props.theme.spacing(6)}; */
-  border-color: inherit;
+  border-color: transparent;
   border-radius: ${props => props.theme.borderRadius};
 
   :focus,
@@ -103,5 +108,6 @@ export const Button = styled.button`
 `;
 
 export const IconArrowRicht = styled(iconArrowRicht)`
+  fill: ${props => props.theme.colors.text.white};
   margin-left: ${props => props.theme.spacing(7)};
 `;
