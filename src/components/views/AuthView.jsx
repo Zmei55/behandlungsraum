@@ -1,5 +1,5 @@
-import { LoginForm } from 'components/LoginForm';
+import { AuthMenu } from 'components/AuthMenu';
 
 export function AuthView() {
-  return <LoginForm />;
+  return <AuthMenu />;
 }
