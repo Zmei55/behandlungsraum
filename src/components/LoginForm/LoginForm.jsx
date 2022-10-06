@@ -1,17 +1,36 @@
-import { Section, Form } from './LoginForm.styled';
+import {
+  Section,
+  Form,
+  Title,
+  SubTitle,
+  Container,
+  Label,
+  Input,
+  Button,
+  IconArrowRicht,
+} from './LoginForm.styled';
 
 export function LoginForm() {
   return (
     <Section>
       <Form>
-        <h2>Авторизация</h2>
-        <h3>Введите логин и пароль</h3>
-        <label>
-          <input type="text" placeholder="Логин" />
-        </label>
-        <label>
-          <input type="text" placeholder="Пароль" />
-        </label>
+        <Title>Autorisierung</Title>
+        <SubTitle>Geben Sie Login und Password ein</SubTitle>
+
+        <Container>
+          <Label>
+            <Input type="text" placeholder="Login" />
+          </Label>
+
+          <Label>
+            <Input type="text" placeholder="Password" />
+          </Label>
+        </Container>
+
+        <Button>
+          Weiter
+          <IconArrowRicht />
+        </Button>
       </Form>
     </Section>
   );

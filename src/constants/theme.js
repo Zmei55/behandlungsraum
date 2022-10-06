@@ -5,6 +5,7 @@ export const theme = Object.freeze({
       body: '#524E6B',
       label: '#6B6F91',
       placeholder: '#9DA0BD',
+      white: '#FFFFFF',
     },
     primary: {
       pressed: '#0E4CC9',
