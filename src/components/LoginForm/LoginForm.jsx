@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   SubTitle,
   Container,
@@ -40,10 +41,12 @@ export function LoginForm({ formState, setFormState }) {
         </Label>
       </Container>
 
-      <Button type="button" disabled={isEmptyForm}>
-        Weiter
-        <IconArrowRicht />
-      </Button>
+      <Link to="station">
+        <Button type="button" disabled={isEmptyForm}>
+          Weiter
+          <IconArrowRicht />
+        </Button>
+      </Link>
     </>
   );
 }

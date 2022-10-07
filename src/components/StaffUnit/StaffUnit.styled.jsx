@@ -15,6 +15,21 @@ export const StationsList = styled.ul`
   overflow: auto;
 
   margin-bottom: ${props => props.theme.spacing(18)};
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 100px;
+    border-radius: 25px;
+    background-color: ${props => props.theme.colors.secondary.default};
+
+    :active {
+      background-color: ${props => props.theme.colors.secondary.pressed};
+    }
+  }
 `;
 
 export const StationListItem = styled.li`

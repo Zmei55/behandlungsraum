@@ -1,5 +1,5 @@
 import { AuthMenu } from 'components/AuthMenu';
 
-export function AuthView() {
+export default function AuthView() {
   return <AuthMenu />;
 }

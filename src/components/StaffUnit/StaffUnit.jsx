@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   SubTitle,
   StationsList,
@@ -50,10 +51,12 @@ export function StaffUnit({ formState, setFormState }) {
       </StationsList>
 
       <BtnContainer>
-        <BtnBack type="button">
-          <IconArrowLeft />
-          Zurück
-        </BtnBack>
+        <Link to="/">
+          <BtnBack type="button">
+            <IconArrowLeft />
+            Zurück
+          </BtnBack>
+        </Link>
         <BtnLogIn type="submit" disabled={isEmptyForm}>
           Log In
         </BtnLogIn>
