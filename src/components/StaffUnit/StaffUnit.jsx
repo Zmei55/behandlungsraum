@@ -57,9 +57,11 @@ export function StaffUnit({ formState, setFormState }) {
             Zurück
           </BtnBack>
         </Link>
-        <BtnLogIn type="submit" disabled={isEmptyForm}>
-          Log In
-        </BtnLogIn>
+        <Link to="/desktop">
+          <BtnLogIn type="submit" disabled={isEmptyForm}>
+            Log In
+          </BtnLogIn>
+        </Link>
       </BtnContainer>
     </>
   );

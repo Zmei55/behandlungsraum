@@ -1,5 +1,6 @@
 export const theme = Object.freeze({
   colors: {
+    white: '#FFFFFF',
     text: {
       default: '#1C1B3B',
       body: '#524E6B',

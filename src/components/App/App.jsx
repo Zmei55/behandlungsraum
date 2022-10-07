@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Container } from 'components/Container';
 import { Layout } from 'components/Layout';
-import { AuthView } from 'components/views';
+import { AuthView, DesktopView } from 'components/views';
 import { LoginForm } from 'components/LoginForm';
 import { StaffUnit } from 'components/StaffUnit';
 
@@ -31,6 +31,7 @@ export function App() {
               }
             />
           </Route>
+          <Route path="desktop" element={<DesktopView />} />
         </Route>
       </Routes>
     </Container>
