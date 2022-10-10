@@ -6,7 +6,8 @@ export const Backdrop = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(230, 230, 230, 0.7);
+  backdrop-filter: blur(3px);
 `;
 
 export const Content = styled.div`
