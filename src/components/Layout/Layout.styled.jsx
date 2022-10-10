@@ -38,3 +38,7 @@ export const Button = styled.button`
 `;
 
 export const IconMainMenuBtn = styled(iconMainMenu)``;
+
+export const Body = styled.section`
+  padding: ${props => props.theme.spacing(8)};
+`;

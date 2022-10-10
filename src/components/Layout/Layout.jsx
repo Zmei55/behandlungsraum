@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { WorkingPlace } from 'components/WorkingPlace';
 // import { UserMenu } from 'components/UserMenu';
-import { Header, Button, IconMainMenuBtn } from './Layout.styled';
+import { Header, Body, Button, IconMainMenuBtn } from './Layout.styled';
 
 export function Layout() {
   return (
@@ -13,7 +13,9 @@ export function Layout() {
           <IconMainMenuBtn />
         </Button>
       </Header>
-      <Outlet />
+      <Body>
+        <Outlet />
+      </Body>
     </>
   );
 }
