@@ -18,7 +18,7 @@ export function Desktop() {
         <LargeContainer>
           <DesctopLink to="/create-request">
             <IconCreateDocument />
-            Erstellen Sie eine Anwendung
+            Erstellen Sie einen Auftrag
           </DesctopLink>
         </LargeContainer>
       </PrimaryContainer>
@@ -27,7 +27,7 @@ export function Desktop() {
         <MediumContainer>
           <DesctopLink>
             <IconFindDocument />
-            Finden Sie eine Anwendung
+            Finden Sie einen Auftrag
           </DesctopLink>
         </MediumContainer>
 

@@ -15,11 +15,11 @@ export const Content = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 300px;
-  max-width: 600px;
-  padding: 12px;
+  max-width: 1574px;
+  min-width: 642px;
+  max-height: 890px;
+  min-height: 460px;
   background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: ${props => props.theme.borderRadius};
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
 `;
