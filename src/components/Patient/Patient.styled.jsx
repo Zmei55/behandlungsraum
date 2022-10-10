@@ -173,7 +173,7 @@ export const NameInput = styled.input`
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #9da0bd;
+  color: #1c1b3b;
 
   width: 650px;
   height: 72px;
@@ -187,13 +187,20 @@ export const NameInput = styled.input`
   :hover {
     border-color: ${props => props.theme.colors.primary.hover};
   }
+
+  ::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #9da0bd;
+  }
 `;
 
 export const BirthDayInput = styled.input`
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #9da0bd;
+  color: #1c1b3b;
 
   width: 294px;
   height: 72px;
@@ -207,13 +214,20 @@ export const BirthDayInput = styled.input`
   :hover {
     border-color: ${props => props.theme.colors.primary.hover};
   }
+
+  ::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #9da0bd;
+  }
 `;
 
 export const MedicalCardInput = styled.input`
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #9da0bd;
+  color: #1c1b3b;
 
   width: 206px;
   height: 72px;
@@ -225,5 +239,12 @@ export const MedicalCardInput = styled.input`
   :focus,
   :hover {
     border-color: ${props => props.theme.colors.primary.hover};
+  }
+
+  ::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #9da0bd;
   }
 `;
