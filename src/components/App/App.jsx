@@ -5,6 +5,7 @@ import { Layout } from 'components/Layout';
 import { AuthView, DesktopView } from 'components/views';
 import { LoginForm } from 'components/LoginForm';
 import { StaffUnit } from 'components/StaffUnit';
+import { CreateRequest } from 'components/CreateRequest';
 
 export function App() {
   const [formState, setFormState] = useState({
@@ -32,6 +33,7 @@ export function App() {
             />
           </Route>
           <Route path="desktop" element={<DesktopView />} />
+          <Route path="create-request" element={<CreateRequest />} />
         </Route>
       </Routes>
     </Container>
