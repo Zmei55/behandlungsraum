@@ -5,10 +5,6 @@ import { ReactComponent as iconFindDocument } from 'icons/findDocument.svg';
 import { ReactComponent as iconFindContainer } from 'icons/findContainer.svg';
 import { ReactComponent as iconDocuments } from 'icons/documents.svg';
 
-export const DesktopSection = styled.section`
-  padding: ${props => props.theme.spacing(8)};
-`;
-
 export const PrimaryContainer = styled.div`
   margin-bottom: ${props => props.theme.spacing(4)};
 `;
@@ -23,7 +19,7 @@ export const LargeContainer = styled.div`
   width: 1856px;
   height: 440px;
   background-color: ${props => props.theme.colors.white};
-  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+  box-shadow: ${props => props.theme.boxShadow};
   border-radius: ${props => props.theme.borderRadius};
 `;
 
@@ -34,7 +30,7 @@ export const MediumContainer = styled.div`
   height: 440px;
   margin-right: ${props => props.theme.spacing(4)};
   background-color: ${props => props.theme.colors.white};
-  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+  box-shadow: ${props => props.theme.boxShadow};
   border-radius: ${props => props.theme.borderRadius};
 `;
 
@@ -44,7 +40,7 @@ export const SmallContainer = styled.div`
   width: 452px;
   height: 440px;
   background-color: ${props => props.theme.colors.white};
-  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
+  box-shadow: ${props => props.theme.boxShadow};
   border-radius: ${props => props.theme.borderRadius};
 `;
 
