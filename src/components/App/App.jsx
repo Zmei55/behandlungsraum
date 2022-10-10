@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Container } from 'components/Container';
 import { Layout } from 'components/Layout';
 import { AuthView, DesktopView } from 'components/views';
 import { LoginForm } from 'components/LoginForm';
 import { StaffUnit } from 'components/StaffUnit';
 import { CreateRequest } from 'components/CreateRequest';
+import { Container } from './App.styled';
 
 export function App() {
   const [formState, setFormState] = useState({
