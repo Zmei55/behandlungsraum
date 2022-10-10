@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import { ReactComponent as iconCross } from 'icons/cross.svg';
-// import { ReactComponent as iconSelectPatient } from 'icons/selectPatient.svg';
-// import { ReactComponent as iconServicesAdd } from 'icons/servicesAdd.svg';
-// import { ReactComponent as iconContainerAdd } from 'icons/containerAdd.svg';
 
 export const Container = styled.div`
   width: 1856px;
@@ -66,46 +63,6 @@ export const CloseBtn = styled.button`
   }
 `;
 
-// export const ModalBtn = styled.button`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-
-//   font-weight: 600;
-//   font-size: 24px;
-//   line-height: 1.17;
-//   color: #115ffd;
-//   fill: #115ffd;
-
-//   width: 100%;
-//   height: 100%;
-//   border: 2px solid #115ffd;
-//   box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
-//   border-radius: 16px;
-//   background-color: transparent;
-//   /* border-color: transparent; */
-
-//   :focus,
-//   :hover {
-//     color: ${props => props.theme.colors.primary.hover};
-//     fill: ${props => props.theme.colors.primary.hover};
-//     border-color: ${props => props.theme.colors.primary.hover};
-//   }
-
-//   :active {
-//     color: ${props => props.theme.colors.primary.pressed};
-//     fill: ${props => props.theme.colors.primary.pressed};
-//     border-color: ${props => props.theme.colors.primary.pressed};
-//   }
-
-//   :disabled {
-//     color: ${props => props.theme.colors.text.placeholder};
-//     fill: ${props => props.theme.colors.text.placeholder};
-//     border-color: ${props => props.theme.colors.text.placeholder};
-//   }
-// `;
-
 export const Title = styled.h3`
   font-weight: 600;
   font-size: 32px;
@@ -115,56 +72,14 @@ export const Title = styled.h3`
   margin-bottom: 30px;
 `;
 
-// export const Patient = styled.div`
-//   width: 1808px;
-//   height: 228px;
-//   /* border: 2px solid #115ffd;
-//   box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
-//   border-radius: 16px; */
-//   margin-bottom: 48px;
-
-//   /* overflow: hidden; */
-// `;
-
 export const ServicesContainer = styled.div`
   margin-right: ${props => props.theme.spacing(16)};
 `;
 
-// export const Services = styled.div`
-//   width: 722px;
-//   height: 388px;
-//   /* border: 2px solid #115ffd;
-//   box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
-//   border-radius: 16px; */
-
-//   /* overflow: hidden; */
-// `;
-
 export const ContainersContainer = styled.div``;
-
-// export const Containers = styled.div`
-//   width: 1022px;
-//   height: 388px;
-//   /* border: 2px solid #9da0bd;
-//   border-radius: 16px; */
-
-//   /* overflow: hidden; */
-// `;
 
 export const IconCross = styled(iconCross)`
   fill: ${props => props.theme.colors.white};
   width: 32px;
   height: 30px;
 `;
-
-// export const IconSelectPatient = styled(iconSelectPatient)`
-//   margin-bottom: 16px;
-// `;
-
-// export const IconServicesAdd = styled(iconServicesAdd)`
-//   margin-bottom: 16px;
-// `;
-
-// export const IconContainerAdd = styled(iconContainerAdd)`
-//   margin-bottom: 16px;
-// `;
