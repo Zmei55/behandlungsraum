@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/behandlungsraum/static/css/main.69fa4ac9.css",
+    "main.js": "/behandlungsraum/static/js/main.308f9019.js",
+    "static/media/containerAdd.svg": "/behandlungsraum/static/media/containerAdd.cdde4102f054a7d8fdd2740d80de4b02.svg",
+    "static/media/documents.svg": "/behandlungsraum/static/media/documents.114939e12af1f9ab214712a07acb6bc6.svg",
+    "static/media/mainMenu.svg": "/behandlungsraum/static/media/mainMenu.039105b6d927da97beeab25b73961680.svg",
+    "static/media/findContainer.svg": "/behandlungsraum/static/media/findContainer.c996c8a66a3b9c6f2d20dbb379a1d0e7.svg",
+    "static/media/findDocument.svg": "/behandlungsraum/static/media/findDocument.39a1dd4ebd1d4007d05bf1fdc84fdc36.svg",
+    "static/media/createDocument.svg": "/behandlungsraum/static/media/createDocument.cfa0a5c08e602e854e7ac0e397b1645c.svg",
+    "static/media/selectPatient.svg": "/behandlungsraum/static/media/selectPatient.e786853226ef3912c469938e56eec3ec.svg",
+    "static/media/servicesAdd.svg": "/behandlungsraum/static/media/servicesAdd.03dedf6e5fbbae83a3f5f0c714a18936.svg",
+    "static/media/arrowLeft.svg": "/behandlungsraum/static/media/arrowLeft.7862a6663e4be637b670807672d1fa33.svg",
+    "static/media/cross.svg": "/behandlungsraum/static/media/cross.84ec1d518fa75993743dfde245657576.svg",
+    "static/media/arrowRicht.svg": "/behandlungsraum/static/media/arrowRicht.fee1ed8092adc7040ef9c2724ff07bb5.svg",
+    "index.html": "/behandlungsraum/index.html",
+    "main.69fa4ac9.css.map": "/behandlungsraum/static/css/main.69fa4ac9.css.map",
+    "main.308f9019.js.map": "/behandlungsraum/static/js/main.308f9019.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69fa4ac9.css",
+    "static/js/main.308f9019.js"
+  ]
+}
