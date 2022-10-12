@@ -1,4 +1,4 @@
-import { Patient } from 'components/Patient';
+import { PatientSearch } from 'components/Patient';
 import { Services } from 'components/Services';
 import { Containers } from 'components/Containers';
 import {
@@ -27,7 +27,7 @@ export function CreateRequest() {
       </Header>
 
       <Body>
-        <Patient />
+        <PatientSearch />
 
         <ServicesContainer>
           <Title>Услуги</Title>

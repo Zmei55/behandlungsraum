@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal } from 'components/Modal';
+import * as patientsAPI from 'service/patients-api';
 import {
   Container,
   ModalBtn,
@@ -17,10 +18,17 @@ import {
   NameInput,
   BirthDayInput,
   MedicalCardInput,
-} from './Patient.styled';
+  PatientsList,
+  PatientsListItem,
+  PatientsName,
+  BirthDay,
+  CardNumber,
+  SelectBtn,
+} from './PatientSearch.styled';
 
-export function Patient() {
+export function PatientSearch() {
   const [showModal, setShowModal] = useState(false);
+  const [patients, setPatients] = useState([]);
   const [formState, setFormState] = useState({
     name: '',
     birthday: '',
@@ -28,6 +36,7 @@ export function Patient() {
   });
 
   console.log(formState);
+  console.log(patients);
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -35,6 +44,14 @@ export function Patient() {
 
   const handleChange = ({ target: { name, value } }) =>
     setFormState(prev => ({ ...prev, [name]: value }));
+
+  const handlePatientFind = () => {
+    patientsAPI.fetchPatients().then(setPatients);
+  };
+
+  const handleResetPatientsList = () => {
+    setPatients([]);
+  };
 
   return (
     <Container>
@@ -50,9 +67,9 @@ export function Patient() {
               <ModalTitle>Wählen Sie einen Patient aus</ModalTitle>
 
               <ButtonContainer>
-                <ResetBtn>Reset</ResetBtn>
+                <ResetBtn onClick={handleResetPatientsList}>Reset</ResetBtn>
 
-                <FindBtn>Find</FindBtn>
+                <FindBtn onClick={handlePatientFind}>Find</FindBtn>
 
                 <CloseBtn onClick={toggleModal}>
                   <IconCross />
@@ -72,7 +89,7 @@ export function Patient() {
 
               <Label>
                 <BirthDayInput
-                  type="text"
+                  type="date"
                   name="birthday"
                   onChange={handleChange}
                   placeholder="Date of Birth"
@@ -88,6 +105,19 @@ export function Patient() {
                 />
               </Label>
             </Form>
+
+            {patients && (
+              <PatientsList>
+                {patients.map(patient => (
+                  <PatientsListItem key={patient.id}>
+                    <PatientsName>{patient.name}</PatientsName>
+                    <BirthDay>{patient.birthDate}</BirthDay>
+                    <CardNumber>{patient.cardNumber}</CardNumber>
+                    <SelectBtn>Select</SelectBtn>
+                  </PatientsListItem>
+                ))}
+              </PatientsList>
+            )}
           </ModalContainer>
         </Modal>
       )}
