@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from 'components/Layout';
-import {
-  AuthView,
-  DesktopView,
-  CreateRequestView,
-  PatientView,
-} from 'components/views';
+import { AuthView, DesktopView, CreateRequestView } from 'components/views';
 import { LoginForm } from 'components/LoginForm';
 import { StaffUnit } from 'components/StaffUnit';
 import { Container } from './App.styled';
