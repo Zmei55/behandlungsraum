@@ -29,10 +29,16 @@ export function PatientSearch() {
           <ModalContainer>
             <PatientSearchModal
               toggleModal={toggleModal}
+              patients={patients}
               setPatients={setPatients}
             />
 
-            {patients && <PatientSearchList patients={patients} />}
+            {patients && (
+              <PatientSearchList
+                patients={patients}
+                toggleModal={toggleModal}
+              />
+            )}
           </ModalContainer>
         </Modal>
       )}

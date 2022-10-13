@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const PatientsList = styled.ul`
   height: 408px;
@@ -56,7 +56,7 @@ export const CardNumber = styled.p`
   padding: 22px 24px;
 `;
 
-export const SelectBtn = styled(Link)`
+export const SelectBtn = styled(NavLink)`
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
