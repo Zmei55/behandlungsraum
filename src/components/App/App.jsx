@@ -44,7 +44,6 @@ export function App() {
           </Route>
           <Route path="desktop" element={<DesktopView />} />
           <Route path="create-request" element={<CreateRequestView />} />
-          <Route path="create-request/:patientID" element={<PatientView />} />
         </Route>
       </Routes>
     </Container>
