@@ -7,7 +7,7 @@ import {
   SelectBtn,
 } from './PatientSearchList.styled';
 
-export function PatientSearchList({ patients }) {
+export function PatientSearchList({ patients, toggleModal }) {
   return (
     <PatientsList>
       {patients.map(patient => (
@@ -15,7 +15,9 @@ export function PatientSearchList({ patients }) {
           <PatientsName>{patient.name}</PatientsName>
           <BirthDay>{patient.birthDate}</BirthDay>
           <CardNumber>{patient.cardNumber}</CardNumber>
-          <SelectBtn>Select</SelectBtn>
+          <SelectBtn to={`${patient.id}`} onClick={toggleModal}>
+            Select
+          </SelectBtn>
         </PatientsListItem>
       ))}
     </PatientsList>

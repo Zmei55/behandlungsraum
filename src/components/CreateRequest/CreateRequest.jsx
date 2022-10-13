@@ -18,7 +18,7 @@ export function CreateRequest() {
   return (
     <Container>
       <Header>
-        <HeaderTitle>Neuen Auftrag</HeaderTitle>
+        <HeaderTitle>Neue Bestellung</HeaderTitle>
         <RouterLink to="/desktop">
           <CloseBtn type="button">
             <IconCross />

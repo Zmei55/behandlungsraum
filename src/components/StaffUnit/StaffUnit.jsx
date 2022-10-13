@@ -10,11 +10,11 @@ import {
   IconArrowLeft,
 } from './StaffUnit.styled';
 
-export function StaffUnit({ formState, setFormState }) {
+export function StaffUnit({ loginFormState, setLoginFormState }) {
   const handleChange = ({ target: { name, value } }) =>
-    setFormState(prev => ({ ...prev, [name]: value }));
+    setLoginFormState(prev => ({ ...prev, [name]: value }));
 
-  const isEmptyForm = formState.station === '';
+  const isEmptyLoginForm = loginFormState.station === '';
 
   return (
     <>
@@ -58,7 +58,7 @@ export function StaffUnit({ formState, setFormState }) {
           </BtnBack>
         </Link>
         <Link to="/desktop">
-          <BtnLogIn type="submit" disabled={isEmptyForm}>
+          <BtnLogIn type="submit" disabled={isEmptyLoginForm}>
             Log In
           </BtnLogIn>
         </Link>

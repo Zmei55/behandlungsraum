@@ -8,12 +8,12 @@ import {
   IconArrowRicht,
 } from './LoginForm.styled';
 
-export function LoginForm({ formState, setFormState }) {
+export function LoginForm({ loginFormState, setLoginFormState }) {
   const handleChange = ({ target: { name, value } }) =>
-    setFormState(prev => ({ ...prev, [name]: value }));
+    setLoginFormState(prev => ({ ...prev, [name]: value }));
 
-  const isEmptyForm =
-    formState.login.length === 0 || formState.password.length === 0;
+  const isEmptyLoginForm =
+    loginFormState.login.length === 0 || loginFormState.password.length === 0;
 
   return (
     <>
@@ -42,7 +42,7 @@ export function LoginForm({ formState, setFormState }) {
       </Container>
 
       <Link to="station">
-        <Button type="button" disabled={isEmptyForm}>
+        <Button type="button" disabled={isEmptyLoginForm}>
           Weiter
           <IconArrowRicht />
         </Button>
