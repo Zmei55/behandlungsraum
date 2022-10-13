@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Modal } from 'components/Modal';
-import * as patientsAPI from 'service/patients-api';
+// import * as patientsAPI from 'service/patients-api';
+import db from 'data/db.json';
 import {
   Container,
   ModalBtn,
@@ -36,7 +37,6 @@ export function PatientSearch() {
   });
 
   console.log(formState);
-  console.log(patients);
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -45,8 +45,11 @@ export function PatientSearch() {
   const handleChange = ({ target: { name, value } }) =>
     setFormState(prev => ({ ...prev, [name]: value }));
 
+  // const handlePatientFind = () => {
+  //   patientsAPI.fetchPatients().then(setPatients);
+  // };
   const handlePatientFind = () => {
-    patientsAPI.fetchPatients().then(setPatients);
+    setPatients(db.patients);
   };
 
   const handleResetPatientsList = () => {

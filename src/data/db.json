@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "id": "",
+      "login": "",
+      "name": "",
+      "station": ""
+    }
+  ],
+  "patients": [
+    {
+      "name": "Weber, Emma",
+      "birthDate": "26.05.1968",
+      "cardNumber": "123456789",
+      "gender": "weiblich",
+      "phoneNumber": "+49157456789",
+      "e-mail": "emma.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "trO3eQi"
+    },
+    {
+      "name": "Weber, Emma",
+      "birthDate": "26.05.1968",
+      "cardNumber": "123456789",
+      "gender": "weiblich",
+      "phoneNumber": "+49157456789",
+      "e-mail": "emma.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "_EfEiVy"
+    },
+    {
+      "name": "Weber, Emma",
+      "birthDate": "26.05.1968",
+      "cardNumber": "123456789",
+      "gender": "weiblich",
+      "phoneNumber": "+49157456789",
+      "e-mail": "emma.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "sWpdzLD"
+    },
+    {
+      "name": "Weber, Emma",
+      "birthDate": "26.05.1968",
+      "cardNumber": "123456789",
+      "gender": "weiblich",
+      "phoneNumber": "+49157456789",
+      "e-mail": "emma.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "unc-LxV"
+    },
+    {
+      "name": "Weber, Emma",
+      "birthDate": "26.05.1968",
+      "cardNumber": "123456789",
+      "gender": "weiblich",
+      "phoneNumber": "+49157456789",
+      "e-mail": "emma.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "lA5Mr2s"
+    },
+    {
+      "name": "Weber, Ben",
+      "birthDate": "12.09.1966",
+      "cardNumber": "234567891",
+      "gender": "männlich",
+      "phoneNumber": "+49157456788",
+      "e-mail": "ben.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "Psp6Wu3"
+    },
+    {
+      "name": "Weber, Ben",
+      "birthDate": "12.09.1966",
+      "cardNumber": "234567891",
+      "gender": "männlich",
+      "phoneNumber": "+49157456788",
+      "e-mail": "ben.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "EvSJbEW"
+    },
+    {
+      "name": "Weber, Ben",
+      "birthDate": "12.09.1966",
+      "cardNumber": "234567891",
+      "gender": "männlich",
+      "phoneNumber": "+49157456788",
+      "e-mail": "ben.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "Fk2OsJ5"
+    },
+    {
+      "name": "Weber, Ben",
+      "birthDate": "12.09.1966",
+      "cardNumber": "234567891",
+      "gender": "männlich",
+      "phoneNumber": "+49157456788",
+      "e-mail": "ben.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "kfYom1h"
+    },
+    {
+      "name": "Weber, Ben",
+      "birthDate": "12.09.1966",
+      "cardNumber": "234567891",
+      "gender": "männlich",
+      "phoneNumber": "+49157456788",
+      "e-mail": "ben.weber@mail.com",
+      "identityDocument": "Pass",
+      "residenceAddress": {
+        "street": "Emmentaler Straße",
+        "houseNumber": "54",
+        "city": "Berlin",
+        "postcode": "13407"
+      },
+      "services": [],
+      "containers": [],
+      "id": "Ij2uHnj"
+    }
+  ]
+}

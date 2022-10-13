@@ -1,4 +1,4 @@
-import { PatientSearch } from 'components/Patient';
+import { PatientSearch } from 'components/PatientSearch';
 import { Services } from 'components/Services';
 import { Containers } from 'components/Containers';
 import {
