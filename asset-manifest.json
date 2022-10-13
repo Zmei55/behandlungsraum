@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/behandlungsraum/static/css/main.69fa4ac9.css",
-    "main.js": "/behandlungsraum/static/js/main.308f9019.js",
+    "main.js": "/behandlungsraum/static/js/main.5d38a3d6.js",
     "static/media/containerAdd.svg": "/behandlungsraum/static/media/containerAdd.cdde4102f054a7d8fdd2740d80de4b02.svg",
     "static/media/documents.svg": "/behandlungsraum/static/media/documents.114939e12af1f9ab214712a07acb6bc6.svg",
     "static/media/mainMenu.svg": "/behandlungsraum/static/media/mainMenu.039105b6d927da97beeab25b73961680.svg",
@@ -15,10 +15,10 @@
     "static/media/arrowRicht.svg": "/behandlungsraum/static/media/arrowRicht.fee1ed8092adc7040ef9c2724ff07bb5.svg",
     "index.html": "/behandlungsraum/index.html",
     "main.69fa4ac9.css.map": "/behandlungsraum/static/css/main.69fa4ac9.css.map",
-    "main.308f9019.js.map": "/behandlungsraum/static/js/main.308f9019.js.map"
+    "main.5d38a3d6.js.map": "/behandlungsraum/static/js/main.5d38a3d6.js.map"
   },
   "entrypoints": [
     "static/css/main.69fa4ac9.css",
-    "static/js/main.308f9019.js"
+    "static/js/main.5d38a3d6.js"
   ]
 }
