@@ -30,12 +30,12 @@ export function CreateRequest() {
         <PatientSearch />
 
         <ServicesContainer>
-          <Title>Услуги</Title>
+          <Title>Services</Title>
           <Services />
         </ServicesContainer>
 
         <ContainersContainer>
-          <Title>Контейнеры</Title>
+          <Title>Containers</Title>
           <Containers />
         </ContainersContainer>
       </Body>
