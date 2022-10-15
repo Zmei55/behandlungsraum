@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { PatientSearch } from 'components/PatientSearch';
 import { Services } from 'components/Services';
 import { Containers } from 'components/Containers';
@@ -15,6 +16,8 @@ import {
 } from './CreateRequest.styled';
 
 export function CreateRequest() {
+  const [patients, setPatients] = useState([]);
+
   return (
     <Container>
       <Header>
@@ -27,7 +30,7 @@ export function CreateRequest() {
       </Header>
 
       <Body>
-        <PatientSearch />
+        <PatientSearch patients={patients} setPatients={setPatients} />
 
         <ServicesContainer>
           <Title>Services</Title>

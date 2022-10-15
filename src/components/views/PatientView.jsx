@@ -5,5 +5,5 @@ export default function PatientView() {
   const { patientID } = useParams();
   console.log('PatientView ~ patientID', patientID);
 
-  return <Patient />;
+  return <Patient patientID={patientID} />;
 }

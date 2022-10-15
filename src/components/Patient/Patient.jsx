@@ -1,23 +1,33 @@
-import { PatientInfo } from 'components/PatientInfo';
-import { Services } from 'components/Services';
-import { Containers } from 'components/Containers';
+import { useState, useEffect } from 'react';
+import db from 'data/db.json';
+// import { PatientInfo } from 'components/PatientInfo';
+// import { Services } from 'components/Services';
+// import { Containers } from 'components/Containers';
 import {
   Container,
-  Header,
-  Body,
-  RouterLink,
-  HeaderTitle,
-  CloseBtn,
-  Title,
-  ServicesContainer,
-  ContainersContainer,
-  IconCross,
+  // Header,
+  // Body,
+  // RouterLink,
+  // HeaderTitle,
+  // CloseBtn,
+  // Title,
+  // ServicesContainer,
+  // ContainersContainer,
+  // IconCross,
 } from './Patient.styled';
 
-export function Patient() {
+export function Patient({ patientID }) {
+  const [patient, setPatient] = useState('');
+  // const patient = db.patients.find(patient => patient.id === patientID);
+
+  useEffect(() => {
+    setPatient(db.patients.find(patient => patient.id === patientID));
+  }, [patientID]);
+
   return (
     <Container>
-      <Header>
+      <h1>{patient.name}</h1>
+      {/* <Header>
         <HeaderTitle>Neue Bestellung</HeaderTitle>
         <RouterLink to="/desktop">
           <CloseBtn type="button">
@@ -38,7 +48,7 @@ export function Patient() {
           <Title>Containers</Title>
           <Containers />
         </ContainersContainer>
-      </Body>
+      </Body> */}
     </Container>
   );
 }
