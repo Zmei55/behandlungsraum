@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 import db from 'data/db.json';
-// import { PatientInfo } from 'components/PatientInfo';
-// import { Services } from 'components/Services';
-// import { Containers } from 'components/Containers';
+import { PatientInfo } from 'components/PatientInfo';
+import { Services } from 'components/Services';
+import { Containers } from 'components/Containers';
 import {
   Container,
-  // Header,
-  // Body,
-  // RouterLink,
-  // HeaderTitle,
-  // CloseBtn,
-  // Title,
-  // ServicesContainer,
-  // ContainersContainer,
-  // IconCross,
+  Header,
+  Body,
+  RouterLink,
+  HeaderTitle,
+  CloseBtn,
+  Title,
+  ServicesContainer,
+  ContainersContainer,
+  IconCross,
 } from './Patient.styled';
 
 export function Patient({ patientID }) {
@@ -26,8 +26,7 @@ export function Patient({ patientID }) {
 
   return (
     <Container>
-      <h1>{patient.name}</h1>
-      {/* <Header>
+      <Header>
         <HeaderTitle>Neue Bestellung</HeaderTitle>
         <RouterLink to="/desktop">
           <CloseBtn type="button">
@@ -37,7 +36,7 @@ export function Patient({ patientID }) {
       </Header>
 
       <Body>
-        <PatientInfo />
+        <PatientInfo patient={patient} />
 
         <ServicesContainer>
           <Title>Services</Title>
@@ -48,7 +47,7 @@ export function Patient({ patientID }) {
           <Title>Containers</Title>
           <Containers />
         </ContainersContainer>
-      </Body> */}
+      </Body>
     </Container>
   );
 }
