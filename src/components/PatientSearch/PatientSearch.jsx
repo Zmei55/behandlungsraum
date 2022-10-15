@@ -9,9 +9,9 @@ import {
   ModalContainer,
 } from './PatientSearch.styled';
 
-export function PatientSearch() {
+export function PatientSearch({ patients, setPatients }) {
   const [showModal, setShowModal] = useState(false);
-  const [patients, setPatients] = useState([]);
+  // const [patients, setPatients] = useState([]);
 
   const toggleModal = () => {
     setShowModal(!showModal);
